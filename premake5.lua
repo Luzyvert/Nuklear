@@ -8,7 +8,7 @@ project "Nuklear"
 
 	files
 	{
-		"**.c", "**.h"
+		"src/**.c", "src/**.h", "nuklear.h"
 	}
 
     includedirs
