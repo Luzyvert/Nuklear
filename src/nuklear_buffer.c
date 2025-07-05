@@ -1,3 +1,13 @@
+#include <string.h>
+#define NK_MEMCPY memcpy
+#define NK_MEMSET memset
+#define NK_SQRT sqrtf
+#define NK_STRICMP strcasecmp
+#define NK_STRNICMP strncasecmp
+#define NK_VSNPRINTF vsnprintf
+#define NK_SINF sinf
+#define NK_COSF cosf
+
 #include "nuklear.h"
 #include "nuklear_internal.h"
 
