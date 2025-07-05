@@ -12,7 +12,7 @@ project "Nuklear"
     }
 
     buildoptions {
-        "-include vendor/Nuklear/nuklear_platform.h"
+        "-include nuklear_platform.h"
     }
 
     includedirs
