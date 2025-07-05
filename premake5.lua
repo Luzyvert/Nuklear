@@ -11,6 +11,16 @@ project "Nuklear"
 		"**.c", "**.h"
 	}
 
+    includedirs
+    {
+        "../allegro/include"
+    }
+
+    libdirs
+    {
+        "../allegro/lib"
+    }
+
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++20"
