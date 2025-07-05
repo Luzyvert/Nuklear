@@ -8,7 +8,7 @@ project "Nuklear"
 
 	files
 	{
-		"src/**.c", "src/**.h", "nuklear.h", "nuklear_sdl_gl2.h"
+		"src/**.c", "src/**.h", "nuklear.h", "nuklear_sdl_renderer.h"
 	}
 
     includedirs
@@ -18,7 +18,15 @@ project "Nuklear"
 
     libdirs
     {
-        "../allegro/lib"
+        "../allegro/lib",
+		"../SDL2/lib/x64"
+    }
+
+    links 
+    {
+        "../SDL2/lib/x64/SDL2.lib",
+        "../SDL2/lib/x64/SDL2main.lib",
+        "../SDL2/lib/x64/SDL2test.lib"
     }
 
 	filter "system:windows"
