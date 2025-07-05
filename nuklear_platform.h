@@ -16,6 +16,6 @@
 #define NK_VSNPRINTF vsnprintf
 #define NK_SINF sinf
 #define NK_COSF cosf
-#define NK_DTOA snprintf
+#define NK_DTOA(dst, val) (snprintf((dst), 64, "%.17g", (val)))
 
 #endif
