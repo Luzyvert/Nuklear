@@ -11,16 +11,15 @@ project "Nuklear"
         "src/**.c", "src/**.h", "nuklear.h", "nuklear_sdl_renderer.h"
     }
 
-    defines 
-    {
-        "NK_MEMCPY=memcpy",
-        "NK_MEMSET=memset",
-        "NK_SQRT=sqrtf",
-        "NK_STRICMP=strcasecmp",
-        "NK_STRNICMP=strncasecmp",
-        "NK_VSNPRINTF=vsnprintf",
-        "NK_SINF=sinf",
-        "NK_COSF=cosf"
+    buildoptions {
+        "-DNK_MEMCPY=memcpy",
+        "-DNK_MEMSET=memset",
+        "-DNK_SQRT=sqrtf",
+        "-DNK_STRICMP=strcasecmp",
+        "-DNK_STRNICMP=strncasecmp",
+        "-DNK_VSNPRINTF=vsnprintf",
+        "-DNK_SINF=sinf",
+        "-DNK_COSF=cosf"
     }
 
     includedirs
