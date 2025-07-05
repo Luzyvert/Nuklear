@@ -1,0 +1,16 @@
+#ifndef NUKLEAR_PLATFORM_H
+#define NUKLEAR_PLATFORM_H
+
+#include <string.h>
+#include <math.h>
+
+#define NK_MEMCPY memcpy
+#define NK_MEMSET memset
+#define NK_SQRT sqrtf
+#define NK_STRICMP strcasecmp
+#define NK_STRNICMP strncasecmp
+#define NK_VSNPRINTF vsnprintf
+#define NK_SINF sinf
+#define NK_COSF cosf
+
+#endif

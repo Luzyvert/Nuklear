@@ -12,14 +12,7 @@ project "Nuklear"
     }
 
     buildoptions {
-        "-DNK_MEMCPY=memcpy",
-        "-DNK_MEMSET=memset",
-        "-DNK_SQRT=sqrtf",
-        "-DNK_STRICMP=strcasecmp",
-        "-DNK_STRNICMP=strncasecmp",
-        "-DNK_VSNPRINTF=vsnprintf",
-        "-DNK_SINF=sinf",
-        "-DNK_COSF=cosf"
+        "-include vendor/Nuklear/nuklear_platform.h"
     }
 
     includedirs
