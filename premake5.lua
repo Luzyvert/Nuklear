@@ -22,6 +22,18 @@ project "Nuklear"
 		"../SDL2/lib/x64"
     }
 
+    defines {
+        "NK_MEMCPY=memcpy",
+        "NK_MEMSET=memset",
+        "NK_SQRT=sqrtf",
+        "NK_STRICMP=strcasecmp",
+        "NK_STRNICMP=strncasecmp",
+        "NK_VSNPRINTF=vsnprintf",
+        "NK_SINF=sinf",
+        "NK_COSF=cosf"
+    }
+
+
     links 
     {
         "../SDL2/lib/x64/SDL2.lib",
