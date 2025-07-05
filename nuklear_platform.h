@@ -3,6 +3,7 @@
 
 #include <string.h>
 #include <math.h>
+#include <stdio.h>
 
 #define NK_MEMCPY memcpy
 #define NK_MEMSET memset
@@ -15,5 +16,6 @@
 #define NK_VSNPRINTF vsnprintf
 #define NK_SINF sinf
 #define NK_COSF cosf
+#define NK_DTOA snprintf
 
 #endif
