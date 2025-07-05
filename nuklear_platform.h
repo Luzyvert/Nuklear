@@ -7,6 +7,9 @@
 #define NK_MEMCPY memcpy
 #define NK_MEMSET memset
 #define NK_SQRT sqrtf
+#define NK_ATAN2 atan2f
+#define NK_COS cosf
+#define NK_SIN sinf
 #define NK_STRICMP strcasecmp
 #define NK_STRNICMP strncasecmp
 #define NK_VSNPRINTF vsnprintf
