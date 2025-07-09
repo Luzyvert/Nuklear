@@ -1,7 +1,7 @@
 project "Nuklear"
     kind "StaticLib"
     language "C"
-    staticruntime "off"
+    staticruntime "on"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -38,6 +38,7 @@ project "Nuklear"
     filter "system:linux"
         pic "On"
         systemversion "latest"
+        linkoptions { "-static" }
 		libdirs
 		{
 			"../allegro/lib",
